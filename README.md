@@ -1,25 +1,67 @@
-# neovim
+# My neovim Setup
+Here's my Neovim setup for my Golang and Rust development with my WSL2 and Ubuntu 22.04, which highly improve my coding flow.
 
-* [JetBrains font](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/JetBrainsMono/Ligatures/Regular/complete/JetBrains%20Mono%20Regular%20Nerd%20Font%20Complete%20Mono.ttf)
+## Prerequisite
+
+* [Golang](https://go.dev/doc/install)
+
+* [Rust](https://www.rust-lang.org/tools/install)
+
+* [Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim)
+
+  
+
+## Essentials Plugin
+
+* [Packer](https://www.github.com/wbthomason/packer.nvim)
+* [Mason](https://www.github.com/williamboman/mason.nvim)
+* [ Mason-lspconfig ](https://www.github.com/williamboman/mason-lspconfig.nvim)
+
+## Essentials Visual Style
+
+* [Nerd Fonts](https://https://github.com/ryanoasis/nerd-fonts)
+* [Oh-My-ZSH](https://github.com/ohmyzsh/ohmyzsh)
+
 
 ## Install
-
+Make sure that you have .config folder in your $HOME directory
 ```
-brew install neovim
-
 ln -s $PWD ~/.config/nvim
 ```
 
-## Language Server Protocol Implementations
+### Install with Packer first
+In your Vim command line, type as below
+```
+:PackerInstall
+```
+This will install Mason installer.
 
-* [Go: gopls](https://github.com/golang/tools/tree/master/gopls)
+Some other important Packer command
 ```
-go install golang.org/x/tools/gopls@latest
+:PackerClean
+:CheckHealth
 ```
 
-* [Python](https://github.com/microsoft/pyright)
+### Follow up install with Mason
+```
+:MasonInstall rust-analyzer codelldb gopls
+```
+When finish we can check with 
+```
+:Mason
+```
 
-```
-brew install pyright
-```
-# My Neovim Setup
+## Some Important Keyboard Shortcut
+
+| Shortcut | Description |
+| ------ | ------ |
+| `-` | View file Explorer |
+| `-` => Navigate to folder then + `a` | Crete new file without quit buffer|
+| `bd` | Quit Buffer |
+| `,` + ff | Fuzzy Search, `,` is defined <mapleader> in `default.lua` |
+
+
+# Massive Credit to
+* [Rodrigo Santiago](https://rsdlt.github.io/posts/rust-nvim-ide-guide-walkthrough-development-debug/)
+* [Percy Bolmér](https://programmingpercy.tech/blog/learn-how-to-use-neovim-as-ide/)
+* The biggest chunk to : [Mario Carrion](https://www.youtube.com/@MarioCarrion) where most of my setup originated from.
