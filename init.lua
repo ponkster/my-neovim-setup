@@ -14,4 +14,5 @@ require("plugins.barbar")
 require("plugins.nvim-surround")
 require("plugins.mason")
 require("plugins.rust")
+require("plugins.autopairs")
 

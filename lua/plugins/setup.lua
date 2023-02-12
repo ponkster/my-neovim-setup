@@ -80,6 +80,35 @@ return require("packer").startup(function()
   use "numToStr/Comment.nvim"               -- https://github.com/numToStr/Comment.nvim
   use { "kylechui/nvim-surround", tag = "*" }  -- https://github.com/kylechui/nvim-surround
 
+  
+ -- good folding
+  use { 'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async' } -- good folding
+  use "max397574/better-escape.nvim" -- faster jj / kshadowk
+
+ -- Autocomplete (), {}, []
+  use {
+        "windwp/nvim-autopairs",
+        config = function() require("nvim-autopairs").setup {} end
+    } 
+ 
+ -- Make Neovim faster
+  use "lewis6991/impatient.nvim"
+
+ -- shows icons in cmp
+  use 'onsails/lspkind.nvim'
+ 
+  use 'tpope/vim-surround' -- Add "", '', (),
+  use { 'phaazon/hop.nvim', branch = 'v2' } -- Navitage to any word in the file
+
+ -- Make telescope faster
+  use 'BurntSushi/ripgrep' -- Telescope grep
+  use 'sharkdp/fd' -- Finder
+  use 'nvim-telescope/telescope-media-files.nvim'
+
+  use 'puremourning/vimspector' -- Debugger
+  use 'mfussenegger/nvim-dap' -- Debugger
+
+
   if packer_bootstrap then
     require("packer").sync()
   end
