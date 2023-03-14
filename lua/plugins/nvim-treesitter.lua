@@ -15,6 +15,7 @@ treesitter.setup {
     "gomod",
     "gowork",
     "javascript",
+    "typescript",
     "json",
     "lua",
     "markdown",

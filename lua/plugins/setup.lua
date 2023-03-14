@@ -22,6 +22,8 @@ return require("packer").startup(function()
   -- Look and Feel
   use { "catppuccin/nvim", as = "catppuccin" } -- https://github.com/catppuccin/nvim
 
+  -- coc for cpp
+  --use {"neoclide/coc.nvim", branch = "release"}
 
   -- for rust
   use "williamboman/mason.nvim"    
@@ -108,6 +110,11 @@ return require("packer").startup(function()
   use 'puremourning/vimspector' -- Debugger
   use 'mfussenegger/nvim-dap' -- Debugger
 
+ -- cpp tools
+  use "Badhi/nvim-treesitter-cpp-tools"
+
+ -- highlight color in TailwindCSS classname
+  use 'princejoogie/tailwind-highlight.nvim'
 
   if packer_bootstrap then
     require("packer").sync()

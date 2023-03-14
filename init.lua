@@ -1,7 +1,7 @@
 require("plugins.setup")
 
 require("plugins.default")
-
+--require("plugins.coc")
 require("plugins.lualine")
 require("plugins.nvim-tree")
 require("plugins.comment")
@@ -15,4 +15,5 @@ require("plugins.nvim-surround")
 require("plugins.mason")
 require("plugins.rust")
 require("plugins.autopairs")
-
+require("plugins.cpp")
+require("plugins.typescript")

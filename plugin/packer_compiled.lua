@@ -221,6 +221,11 @@ _G.packer_plugins = {
     path = "/home/ponkster/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["nvim-treesitter-cpp-tools"] = {
+    loaded = true,
+    path = "/home/ponkster/.local/share/nvim/site/pack/packer/start/nvim-treesitter-cpp-tools",
+    url = "https://github.com/Badhi/nvim-treesitter-cpp-tools"
+  },
   ["nvim-treesitter-textobjects"] = {
     loaded = true,
     path = "/home/ponkster/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textobjects",
