@@ -57,6 +57,7 @@ When finish we can check with
 | ------ | ------ |
 | `-` | View file Explorer |
 | `-` => Navigate to folder then + `a` | Crete new file without quit buffer|
+| `s` => Navigate to folder then + `s` | Open file in default editor or open file explorer|
 | `bd` | Quit Buffer |
 | `,` + ff | Fuzzy Search, `,` is defined <mapleader> in `default.lua` |
 
