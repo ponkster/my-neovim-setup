@@ -266,6 +266,11 @@ _G.packer_plugins = {
     path = "/home/ponkster/.local/share/nvim/site/pack/packer/start/rust-tools.nvim",
     url = "https://github.com/simrat39/rust-tools.nvim"
   },
+  ["tailwind-highlight.nvim"] = {
+    loaded = true,
+    path = "/home/ponkster/.local/share/nvim/site/pack/packer/start/tailwind-highlight.nvim",
+    url = "https://github.com/princejoogie/tailwind-highlight.nvim"
+  },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,
     path = "/home/ponkster/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",

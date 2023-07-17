@@ -12,7 +12,7 @@ vim.opt.encoding="utf-8"
 
 vim.opt.compatible=false
 vim.opt.hlsearch=true
-vim.opt.relativenumber = true
+vim.opt.number = true
 vim.opt.laststatus = 2
 vim.opt.vb = true
 vim.opt.ruler = true

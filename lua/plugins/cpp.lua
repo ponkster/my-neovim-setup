@@ -27,7 +27,7 @@ require('nvim-treesitter.configs').setup({
         source_extension = 'cxx', -- optional
         custom_define_class_function_commands = { -- optional
             TSCppImplWrite = {
-                output_handle = require'nvim-treesitter.nt-cpp-tools.output_handlers'.get_add_to_cpp()
+                output_handle = require'nt-cpp-tools.output_handlers'.get_add_to_cpp()
             }
             --[[
             <your impl function custom command name> = {

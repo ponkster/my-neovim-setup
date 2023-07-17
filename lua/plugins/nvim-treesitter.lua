@@ -12,6 +12,7 @@ treesitter.setup {
     "go",
     "rust",
     "toml",
+    "c_sharp",
     "gomod",
     "gowork",
     "javascript",
