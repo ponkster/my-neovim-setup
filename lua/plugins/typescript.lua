@@ -3,3 +3,4 @@ require 'lspconfig'.tsserver.setup {
     filetypes = { "typescript", "typescript.tsx"},
     cmd = {"typescript-language-server", "--stdio" }
 }
+
