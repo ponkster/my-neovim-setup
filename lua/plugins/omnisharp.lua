@@ -80,7 +80,7 @@
         end
             vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
         end,
-        cmd = {"/usr/local/bin/OmniSharp", "--languageserver", "--hostPID", tostring(pid) },
+        cmd = {"/usr/local/bin/omnisharp/OmniSharp", "--languageserver", "--hostPID", tostring(pid) },
         capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities()),
         settings = {
             FormattingOptions = {

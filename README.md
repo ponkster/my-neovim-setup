@@ -44,12 +44,15 @@ Some other important Packer command
 
 ### Follow up install with Mason
 ```
-:MasonInstall rust-analyzer codelldb gopls
+:MasonInstall rust-analyzer codelldb gopls csharp_ls cpplint
 ```
 When finish we can check with 
 ```
 :Mason
 ```
+### csharp / dotnet
+Better use dotnet7.0
+
 
 ## Some Important Keyboard Shortcut
 

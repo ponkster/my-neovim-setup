@@ -116,6 +116,11 @@ return require("packer").startup(function()
  -- highlight color in TailwindCSS classname
   use 'princejoogie/tailwind-highlight.nvim'
 
+ -- linters
+  use {
+        "mfussenegger/nvim-lint",
+    }
+
   if packer_bootstrap then
     require("packer").sync()
   end
