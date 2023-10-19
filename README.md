@@ -44,7 +44,7 @@ Some other important Packer command
 
 ### Follow up install with Mason
 ```
-:MasonInstall rust-analyzer codelldb gopls csharp_ls cpplint
+:MasonInstall rust-analyzer codelldb gopls csharp-language-server svelte-language-server cpplint
 ```
 When finish we can check with 
 ```
