@@ -1,5 +1,4 @@
 require("plugins.setup")
-
 require("plugins.default")
 --require("plugins.coc")
 require("plugins.lualine")
@@ -22,3 +21,4 @@ require("plugins.csharp")
 require("plugins.nvimlint")
 require("plugins.svelte")
 require("plugins.tailwindcss")
+require("plugins.bufferline")
