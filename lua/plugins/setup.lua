@@ -121,6 +121,9 @@ return require("packer").startup(function()
         "mfussenegger/nvim-lint",
     }
 
+  use 'jlcrochet/vim-razor'
+
+ 
   if packer_bootstrap then
     require("packer").sync()
   end
