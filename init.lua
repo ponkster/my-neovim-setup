@@ -22,3 +22,5 @@ require("plugins.nvimlint")
 require("plugins.svelte")
 require("plugins.tailwindcss")
 require("plugins.bufferline")
+--zig
+require("plugins.zig")
