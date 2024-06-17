@@ -122,6 +122,9 @@ return require("packer").startup(function()
     }
 
   use 'jlcrochet/vim-razor'
+  
+  -- sqls
+  use 'nanotee/sqls.nvim'
 
  
   if packer_bootstrap then

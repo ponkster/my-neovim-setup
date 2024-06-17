@@ -24,3 +24,5 @@ require("plugins.tailwindcss")
 require("plugins.bufferline")
 --zig
 require("plugins.zig")
+--sqls
+require("plugins.sqls")
